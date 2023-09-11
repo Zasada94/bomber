@@ -77,80 +77,25 @@ const gamePage = () => {
 	CanvasResize();
 	window.addEventListener("resize", CanvasResize);
 
-	const innerWalls = [
-		{
-			x: 2 * tile,
-			y: 2 * tile,
-			width: tile,
-			height: tile,
-		},
-		{
-			x: 4 * tile,
-			y: 2 * tile,
-			width: tile,
-			height: tile,
-		},
-		{
-			x: 6 * tile,
-			y: 2 * tile,
-			width: tile,
-			height: tile,
-		},
-		{
-			x: 8 * tile,
-			y: 2 * tile,
-			width: tile,
-			height: tile,
-		},
-		{
-			x: 10 * tile,
-			y: 2 * tile,
-			width: tile,
-			height: tile,
-		},
-		{
-			x: 12 * tile,
-			y: 2 * tile,
-			width: tile,
-			height: tile,
-		},
-		{
-			x: 2 * tile,
-			y: 4 * tile,
-			width: tile,
-			height: tile,
-		},
-		{
-			x: 4 * tile,
-			y: 4 * tile,
-			width: tile,
-			height: tile,
-		},
-		{
-			x: 6 * tile,
-			y: 4 * tile,
-			width: tile,
-			height: tile,
-		},
-		{
-			x: 8 * tile,
-			y: 4 * tile,
-			width: tile,
-			height: tile,
-		},
-		{
-			x: 10 * tile,
-			y: 4 * tile,
-			width: tile,
-			height: tile,
-		},
-		{
-			x: 12 * tile,
-			y: 4 * tile,
-			width: tile,
-			height: tile,
-		},
-	];
+	//inner Walls grid
+	const innerWalls = [];
+
+	const wallWidth = tile;
+	const wallHeight = tile;
+
+	for (let row = 1; row < 7; row++) {
+		for (let col = 1; col < 7; col++) {
+			const wallX = 2 * col * tile;
+			const wallY = 2 * row * tile;
+
+			innerWalls.push({
+				x: wallX,
+				y: wallY,
+				width: wallWidth,
+				height: wallHeight,
+			});
+		}
+	}
 
 	const player1Image = new Image();
 	player1Image.src = player1.image;
