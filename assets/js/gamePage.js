@@ -56,7 +56,7 @@ const gamePage = () => {
 		color: "blue",
 		score: 0,
 		lives: 0,
-		image: "./assets/img/bomberman.png",
+		image: "/bomberman.png",
 		x: tile,
 		y: tile,
 	};
@@ -103,7 +103,7 @@ const gamePage = () => {
 	const wall = {
 		width: tile,
 		height: tile,
-		image: "./assets/img/wall.png",
+		image: "/wall.png",
 	};
 
 	const wallImage = new Image();
