@@ -1,20 +1,20 @@
 @mixin button {
-    font-family: 'Lato', sans-serif;
+	font-family: "Lato", sans-serif;
 	position: absolute;
 	margin: 0 auto;
-	width: 47%;
-	left: 26%;
 	cursor: pointer;
-	background-color: rgba(255,255,255,0);
+	background-color: rgba(255, 255, 255, 0);
 	font-weight: 700;
-	font-size: 16px;
-	color: #FFFFFF;
+	font-size: 3vmin;
+	color: #ffffff;
 	letter-spacing: 0.16em;
-	border: 2px solid #FFFFFF;
-	padding: 16px;
+	border: 2px solid #ffffff;
+	padding: 0.5vmin 1vmin;
 	transition: 0.6s;
-    &:hover {
-		background-color: #FFFFFF;
-		color: #FF0000;
+	left: 50%;
+	transform: translateX(-50%);
+	&:hover {
+		background-color: #ffffff;
+		color: #ff0000;
 	}
 }

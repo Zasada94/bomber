@@ -1,4 +1,4 @@
-@import 'mixins';
+@import "mixins";
 
 .homeContainer {
 	position: absolute;
@@ -6,7 +6,7 @@
 	width: 100vw;
 	max-height: 100vw;
 	max-width: 100vh;
-	background: linear-gradient(to bottom right, #FF0000, #444444);
+	background: linear-gradient(to bottom right, #ff0000, #444444);
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -14,22 +14,21 @@
 
 .startButton {
 	@include button;
-	bottom: 50%;
-    transform: translateY(50%);
+	bottom: 45%;
 }
 
 .game-title {
 	display: flex;
 	justify-content: center;
-	font-family: 'Rubik Vinyl', cursive;
+	font-family: "Rubik Vinyl", cursive;
 	position: absolute;
 	width: 47%;
 	bottom: 60%;
-    transform: translateY(50%);
+	transform: translateY(50%);
 	left: 26%;
 	font-weight: 700;
 	font-size: 40px;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 @media (max-width: 800px) {

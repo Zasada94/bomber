@@ -2,7 +2,7 @@ import heartImage from "./../img/heart.png";
 
 const gamePage = () => {
 	app.innerHTML = `
-		<div id="gameContainer">
+	<div id="gameContainer">
 			<canvas id="canvas"></canvas>
 			<div id="time-container">
 				Time: <div id="time-counter">10:00</div>
@@ -10,9 +10,9 @@ const gamePage = () => {
 			<div id="lives-container">
 				Lives: 
 				<div id="lives-counter">
-					<img width="40" height ="40" class="heart-icon first" src="${heartImage}"></img>
-					<img width="40" height ="40" class="heart-icon second" src="${heartImage}"></img>
-					<img width="40" height ="40" class="heart-icon third" src="${heartImage}"></img>
+					<img class="heart-icon first" src="${heartImage}"></img>
+					<img class="heart-icon second" src="${heartImage}"></img>
+					<img class="heart-icon third" src="${heartImage}"></img>
 				</div>	
 			</div>
 			<player id="exit-btn-link-container" href="./index.html">
@@ -20,7 +20,7 @@ const gamePage = () => {
 					Exit
 				</div>
 			</player>
-		</div>`;
+	</div>`;
 
 	const timeCounter = document.getElementById("time-counter");
 	const canvas = document.getElementById("canvas");
