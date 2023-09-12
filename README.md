@@ -18,4 +18,4 @@ Project was created with:
 * map with objects
 
 ## Live :star2:
-[[live link](https://bomber-zeta.vercel.app/)
+[[live link](https://bomber-zeta.vercel.app/)]
