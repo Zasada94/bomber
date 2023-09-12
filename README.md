@@ -13,4 +13,4 @@ Project was created with:
 * JavaScript
 
 ## Live :star2:
-[live link]
+[[live link](https://bomber-zeta.vercel.app/)https://bomber-zeta.vercel.app/]
